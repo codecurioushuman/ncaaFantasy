@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick Your PLayers</title>
+</head>
+<body>
+    <h1>This is where you fill your roster</h1>
+    
+    <% for(let player of teams.athletes){ %>
+        <ul>
+            <li><%= player.firstName %> </li>
+        </ul>
+      <% } %> 
+            
+    
+</body>
+</html>

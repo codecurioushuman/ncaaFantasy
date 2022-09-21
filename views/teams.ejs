@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Teams</title>
+</head>
+<body>
+    <h1>This is where you fill your roster</h1>
+        <% for(let team of teams){ %>
+            <a href="./teams/<%= team._id %> ">
+                <img src="<%= team.logo %> " height="50" width="50">
+            </a>
+            <% } %> 
+    
+</body>
+</html>
