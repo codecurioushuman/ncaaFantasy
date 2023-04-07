@@ -15,7 +15,7 @@ mongoose.connect('mongodb://localhost:27017/Players', {useNewUrlParser: true, us
 
 async function syncDatabase(){
     try{
-        const response = await axios.get('https://api.sportsdata.io/v3/cbb/scores/json/Players?key=e073cfb4e64f4d6d96dfdfc1c30030fa')
+        const response = await axios.get('https://api.sportsdata.io/v3/cbb/scores/json/Players?key=<Your API Key>')
         const playerData = response.data
         for(let player of playerData){
           await Player.create({playerID:player.PlayerID, firstName:player.FirstName, lastName:player.LastName, teamID:player.TeamID, position:player.Position})
