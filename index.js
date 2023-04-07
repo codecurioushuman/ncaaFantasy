@@ -77,26 +77,7 @@ async function pushRoster(userID, playerID){
     user.roster.push(player);
     await user.save()
 }
-// app.get('/products/new', (req,res) => {
-//     res.render('products/new')
-// })
-// app.post('/products', async (req,res) => {
-//     const newProduct = new Product(req.body)
-//     await newProduct.save()
-//     res.redirect('/products')
-// })
-    //  async function getScores(roster){
-    //     for(let object of roster){
-    //         const response = await axios.get(` https://api.sportsdata.io/v3/cbb/stats/json/PlayerGameStatsByPlayer/2020-DEC-21/${object.ID}?key=e073cfb4e64f4d6d96dfdfc1c30030fa`)
-    //         try{
-    //             if(response.data.Name !== undefined){
-    //                 console.log(`${response.data.Name} got: ${response.data.Points}`)
-    //                 userRoster.score +=response.data.Points;
-    //             }
-    //     }
-    //         catch{
-    //             console.log('no data for that game')
-    //     }
+
 
 
 
