@@ -15,7 +15,7 @@ mongoose.connect('mongodb://localhost:27017/Players', {useNewUrlParser: true, us
 })
 async function getTeams(){
     try{
-        const response = await axios.get('https://api.sportsdata.io/v3/cbb/scores/json/teams?key=e073cfb4e64f4d6d96dfdfc1c30030fa')
+        const response = await axios.get('https://api.sportsdata.io/v3/cbb/scores/json/teams?key=<Insert Your API Key>')
         const teamData = response.data
         const players = await Player.find({})
         for(let team of teamData){
@@ -44,4 +44,4 @@ async function getTeams(){
     }
 }
 
-getTeams();
+//getTeams();
